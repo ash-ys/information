@@ -8,15 +8,16 @@
 }
 .card-list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
 }
 
 .card {
-  background-color: #e4eddb;
   display: flex;
   flex-direction: column;
   align-content: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 .h1 {
   color: #e4eddb;
@@ -44,7 +45,7 @@
 }
 
 .search {
-  margin: 6px;
+  margin: 20px;
   padding: 5px;
   margin-left: auto;
   align-content: center;
@@ -52,4 +53,22 @@
   margin: 4px auto;
   text-align: center;
   display: inline-block;
+  display: flex;
+  margin-top: 15px;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.card img {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+  background-color: #e4eddb;
 }

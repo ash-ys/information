@@ -10,7 +10,6 @@ class App extends React.Component {
 
     this.state = {
       users: [],
-      
     };
   }
 
@@ -21,15 +20,15 @@ class App extends React.Component {
   }
 
   render() {
-    return(
-    <div className="App">
-      <div className="wrapper">
-    <Title>My Monsters</Title>
-    <Search/>
-    <CardList datas={this.state.users} />
-    </div>
-    </div>
-    )
+    return (
+      <div className="App">
+        <div className="wrapper">
+          <Title>My Monsters</Title>
+          <Search placeholder="search" />
+          <CardList datas={this.state.users} />
+        </div>
+      </div>
+    );
   }
 }
 

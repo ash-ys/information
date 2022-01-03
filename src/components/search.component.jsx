@@ -1,8 +1,8 @@
 import React from "react";
 
-const Search = ()=>{
+const Search = ({placeholder})=>{
     return(
-        <input type="search" className="search"/>
+        <input type="search" className="search" placeholder={placeholder}/>
     );
 }
 
