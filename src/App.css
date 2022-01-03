@@ -1,5 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  background-color: #307672;
+}
 .card-list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+}
+
+.card {
+  background-color: #e4eddb;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.h1 {
+  color: #e4eddb;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.name {
+  background-color: #307672;
+  color: #e4eddb;
+}
+
+.email {
+  background-color: #307672;
+  color: #e4eddb;
+}
+
+.phone {
+  background-color: #307672;
+  color: #e4eddb;
+}
+
+.search {
+  margin: 6px;
+  padding: 5px;
+  margin-left: auto;
+  justify-self: center;
 }

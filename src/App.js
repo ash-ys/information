@@ -1,6 +1,8 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import CardList from "./components/card-list.component";
+import Search from "./components/search.component";
+import Title from "./components/title.component";
 
 class App extends React.Component {
   constructor() {
@@ -8,6 +10,7 @@ class App extends React.Component {
 
     this.state = {
       users: [],
+      
     };
   }
 
@@ -18,7 +21,15 @@ class App extends React.Component {
   }
 
   render() {
-    return <CardList datas={this.state.users} />;
+    return(
+    <div className="App">
+      <div className="wrapper">
+    <Title>My Monsters</Title>
+    <Search/>
+    <CardList datas={this.state.users} />
+    </div>
+    </div>
+    )
   }
 }
 
