@@ -20,6 +20,7 @@
 }
 .h1 {
   color: #e4eddb;
+  text-align: center;
 }
 
 .wrapper {
@@ -46,5 +47,9 @@
   margin: 6px;
   padding: 5px;
   margin-left: auto;
-  justify-self: center;
+  align-content: center;
+  width: 357px;
+  margin: 4px auto;
+  text-align: center;
+  display: inline-block;
 }
