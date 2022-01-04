@@ -24,7 +24,10 @@ class App extends React.Component {
     const { users, searchFilter } = this.state;
 
     const filteredUsers = users.filter((user) =>
-      user.name.toLowerCase().includes(searchFilter.toLowerCase())
+      user.name.toLowerCase().includes(searchFilter.toLowerCase()),
+      
+  
+      
     );
 
     return (
