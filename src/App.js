@@ -1,5 +1,5 @@
+import React from "react";
 import "./App.css";
-import React from 'react'
 import CardList from "./components/card-list.component";
 import Search from "./components/search.component";
 import Title from "./components/title.component";
@@ -10,6 +10,7 @@ class App extends React.Component {
 
     this.state = {
       users: [],
+      searchFilter: "",
     };
   }
 
@@ -20,13 +21,23 @@ class App extends React.Component {
   }
 
   render() {
+    const { users, searchFilter } = this.state;
+
+    const filteredUsers = users.filter((user) =>
+      user.name.toLowerCase().includes(searchFilter.toLowerCase())
+    );
+
     return (
       <div className="App">
-        <div className="wrapper">
-          <Title>My Monsters</Title>
-          <Search placeholder="search" />
-          <CardList datas={this.state.users} />
-        </div>
+        <Title>Hello Monsters</Title>
+
+        <input
+          type="search"
+          placholder="Search..."
+          onChange={(e) => this.setState({ searchFilter: e.target.value })}
+         className="search"/>
+
+        <CardList datas={filteredUsers} />
       </div>
     );
   }
