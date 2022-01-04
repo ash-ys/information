@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 .App {
-  background-color: #307672;
+  background-color: #406882;
+}
+body {
+  background-color: #406882;
 }
 .card-list {
   display: grid;
@@ -20,7 +23,7 @@
   margin-top: 10px;
 }
 .h1 {
-  color: #e4eddb;
+  color: #b1d0e0;
   text-align: center;
 }
 
@@ -29,19 +32,9 @@
   margin: 0 auto;
 }
 
-.name {
-  background-color: #307672;
-  color: #e4eddb;
-}
-
-.email {
-  background-color: #307672;
-  color: #e4eddb;
-}
-
-.phone {
-  background-color: #307672;
-  color: #e4eddb;
+.card-components {
+  background-color: #406882;
+  color: #b1d0e0;
 }
 
 .search {
@@ -70,5 +63,5 @@
   height: 200px;
   width: 100%;
   object-fit: contain;
-  background-color: #e4eddb;
+  background-color: #b1d0e0;
 }

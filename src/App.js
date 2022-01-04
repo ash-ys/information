@@ -33,7 +33,7 @@ class App extends React.Component {
 
         <input
           type="search"
-          placholder="Search..."
+          placeholder="Search..."
           onChange={(e) => this.setState({ searchFilter: e.target.value })}
          className="search"/>
 

@@ -9,9 +9,11 @@ const Card = ({ data }) => {
         alt="uimg"
       />
       </div>
-      <h3 className="name">{data.name}</h3>
-      <h4 className="email">{data.email}</h4>
-      <h5 className="phone">{data.phone}</h5>
+      <div  className = "card-components">
+      <h3 >{data.name}</h3>
+      <h4 >{data.email}</h4>
+      <h5 >{data.phone}</h5>
+      </div>
     </div>
   );
 };

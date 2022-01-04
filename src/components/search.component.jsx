@@ -1,9 +1,7 @@
 import React from "react";
 
-const Search = ({placeholder})=>{
-    return(
-        <input type="search" className="search" placeholder={placeholder}/>
-    );
-}
+const Search = ({ handleChange, ...otherProps }) => {
+  return <input onChange={handleChange} {...otherProps} />;
+};
 
 export default Search;
